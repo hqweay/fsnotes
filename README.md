@@ -1,3 +1,13 @@
+# Reason
+
+I forked fsnotes for follow reasons:
+
+- [open subtag in a note on Mac](https://github.com/glushchenko/fsnotes/issues/1119)
+
+- [Keep showing the original note when clicking a tag in a note](https://github.com/glushchenko/fsnotes/issues/1120)
+
+I will keep upgrade this project from upstream till it realises these features or Bear releases version 2.0. In the process, I will try to code for my needs.
+
 [![Build Status](https://travis-ci.com/glushchenko/fsnotes.svg?branch=master)](https://travis-ci.com/glushchenko/fsnotes)
 
 # FSNotes
