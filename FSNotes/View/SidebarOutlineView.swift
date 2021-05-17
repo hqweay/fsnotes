@@ -1243,8 +1243,8 @@ class SidebarOutlineView: NSOutlineView,
     }
 
     public func select(tag: String) {
-        guard let i = sidebarItems?.firstIndex(where: {($0 as? Tag)?.getName() == tag }) else { return }
-
+        guard let i = sidebarItems?.firstIndex(where: {($0 as? Tag)?.getName() == tag || ($0 as? Tag)?.find(name: tag) != nil }) else { return }
+        
         UserDataService.instance.firstNoteSelection = true
         selectRowIndexes([i], byExtendingSelection: false)
     }
