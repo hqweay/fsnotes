@@ -587,16 +587,16 @@ class SidebarOutlineView: NSOutlineView,
                         vd.notesTableView.setSelected(note: note)
                     }
                 }
-//                else if UserDataService.instance.firstNoteSelection {
-//                    if let note = vd.notesTableView.noteList.first {
-//                        DispatchQueue.main.async {
-//                            vd.selectNullTableRow(note: note)
-//                            vd.editArea.fill(note: note)
-//                        }
-//                    }
+                else if UserDataService.instance.firstNoteSelection && UserDefaultsManagement.originalNote {
+                    if let note = vd.notesTableView.noteList.first {
+                        DispatchQueue.main.async {
+                            vd.selectNullTableRow(note: note)
+                            vd.editArea.fill(note: note)
+                        }
+                    }
 
-//                    UserDataService.instance.firstNoteSelection = false
-//                }
+                    UserDataService.instance.firstNoteSelection = false
+                }
             }
         }
     }
@@ -1271,7 +1271,6 @@ class SidebarOutlineView: NSOutlineView,
                     deselectRow(i)
                 }
             }
-
             extend = true
         }
         

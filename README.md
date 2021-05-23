@@ -2,9 +2,13 @@
 
 I forked fsnotes for follow reasons:
 
-- [open subtag in a note on Mac](https://github.com/glushchenko/fsnotes/issues/1119)
+- [x] [open subtag in a note on Mac](https://github.com/glushchenko/fsnotes/issues/1119)
 
-- [Keep showing the original note when clicking a tag in a note](https://github.com/glushchenko/fsnotes/issues/1120)
+  Update on 2021-05-23 : I'm very happy that opening subtags has been merged to upstream.
+
+- [ ] [Keep showing the original note when clicking a tag in a note](https://github.com/glushchenko/fsnotes/issues/1120)
+
+  But I have to keep this repository for my personal need.
 
 I will keep upgrade this project from upstream till it realises these features or Bear releases version 2.0. In the process, I will try to code for my needs.
 

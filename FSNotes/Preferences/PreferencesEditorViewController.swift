@@ -24,6 +24,7 @@ class PreferencesEditorViewController: NSViewController {
     @IBOutlet weak var spacesInsteadTab: NSButton!
     @IBOutlet weak var marginSize: NSSlider!
     @IBOutlet weak var inlineTags: NSButton!
+    @IBOutlet weak var originalNote: NSButton!
 
     override func viewWillAppear() {
         super.viewWillAppear()
@@ -61,6 +62,8 @@ class PreferencesEditorViewController: NSViewController {
         marginSize.floatValue = UserDefaultsManagement.marginSize
 
         inlineTags.state = UserDefaultsManagement.inlineTags ? .on : .off
+        
+        originalNote.state = UserDefaultsManagement.originalNote ? .on : .off
     }
 
     //MARK: global variables
